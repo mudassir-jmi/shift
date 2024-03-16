@@ -1,0 +1,121 @@
+.mob-serch-bt {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .mt-7ptpu {
+    margin-top: 7px;
+  }
+  
+  .h-content {
+    height: 100%;
+  }
+  .rent-buy-commercialt {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    color: rgb(175, 170, 170);
+    text-decoration: none;
+    transition: transform 0.5s ease 0s;
+    width: auto;
+    margin-top: 44px;
+    margin-bottom: 10px;
+    border-radius: 4px 4px 0 0;
+  
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .buy-srch {
+    cursor: pointer;
+    width: 32%;
+    line-height: 11px;
+    border-top-left-radius: 54px;
+    border-right: none;
+  }
+  .rent-srch {
+    cursor: pointer;
+    width: 32%;
+    line-height: 40px;
+    border-right: none;
+    border-top-left-radius: 4px;
+  }
+  .commercial-srch {
+    cursor: pointer;
+    width: 32%;
+    line-height: 40px;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border: 0;
+    border-style: solid;
+  }
+  .rent-buy-commercialt div {
+    cursor: pointer;
+    width: 32%;
+    line-height: 40px;
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom: 4px solid transparent;
+    text-align: center;
+    font-size: 14px;
+  }
+  .rent-buy-commercialt div.active {
+    border-bottom-color: #003159;
+    font-size: 14px;
+    color: #003159;
+  }
+  .bbroker-free {
+    display: flex;
+    font-size: 16px;
+    margin-top: 1.2px;
+    margin-bottom: 1.2px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-box-container {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #e9e1e1;
+    margin-top: 1.5px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  .search-text {
+    font-size: 16px;
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 1.5px;
+    width: calc(100% - 70px);
+  }
+  
+  .search-icon-img {
+    float: right;
+    padding: 10.6px -0.2px;
+    position: relative;
+    right: -0.5px;
+    top: -39.5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    height: 40px;
+  }
+  .icon-glass i {
+    font-size: 23px;
+    color: #003159;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .icon-glass {
+    margin-left: -11px;
+    margin-top: 3px;
+  }
+  .icon-glass:hover i {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
