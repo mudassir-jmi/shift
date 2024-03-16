@@ -10,17 +10,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+       
         .card {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
             transition: transform 0.3s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
+
+        .card.selected::before {
+            content: "\2713";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: green;
+            font-size: 30px;
         }
-        .active {
-            font-weight: bold;
-            border-bottom: 2px solid #007bff;
+
+        @media (min-width: 992px) {
+            .card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.08);
+            }
         }
+
         .search-box-container {
             position: relative;
         }
@@ -38,7 +54,7 @@
             padding: 0 10px;
         }
 
-        /*  for bottom searchbar */
+        /*  For bottom searchbar */
  
        
         .input-group {
@@ -85,32 +101,36 @@
             </div>
         </div>
     </div>
+
     <!-- card section start -->
+
+  
+
     <div class="container mt-5">
         <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
-                <div class="card text-center">
+                <div class="card text-center" onclick="toggleSelected(this)">
                     <div class="card-body">
                         <h5 class="card-title">Property Type V</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card text-center">
+                <div class="card text-center" onclick="toggleSelected(this)">
                     <div class="card-body">
                         <h5 class="card-title">BHK Type V</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card text-center">
+                <div class="card text-center" onclick="toggleSelected(this)">
                     <div class="card-body">
                         <h5 class="card-title">Property For V</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card text-center">
+                <div class="card text-center" onclick="toggleSelected(this)">
                     <div class="card-body">
                         <h5 class="card-title">Property Status V</h5>
                     </div>
@@ -145,6 +165,10 @@
             });
            
             document.querySelector('.' + type + '-srch').classList.add('active');
+        }
+
+        function toggleSelected(card) {
+            card.classList.toggle('selected');
         }
     </script>
 </body>
