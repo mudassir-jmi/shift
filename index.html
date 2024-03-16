@@ -37,6 +37,30 @@
             align-items: center;
             padding: 0 10px;
         }
+
+        /*  for bottom searchbar */
+ 
+        .container.mt-5 {
+            margin-top: 30px;
+        }
+
+        .input-group {
+            position: relative;
+            width: 100%;
+        }
+
+        .form-control {
+            border-radius: 25px !important;
+        }
+
+        .btn-primary {
+            border-radius: 25px !important;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -60,7 +84,7 @@
     </div>
     <!-- card section start -->
     <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card text-center">
                     <div class="card-body">
@@ -92,6 +116,22 @@
         </div>
     </div>
     <!-- card section end -->
+
+    <!-- search bar section start -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by locality or landmark">
+                <button class="btn btn-primary" type="button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- search bar section end -->
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
